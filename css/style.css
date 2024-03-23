@@ -253,3 +253,30 @@ body {
 .signin:active {
   opacity: 0.3;
 }
+
+/* main */
+
+.main-content {
+  width: 1170px;
+  margin: 0 auto;
+  padding: 0 55px;
+}
+
+.hero {
+  margin-bottom: 120px;
+}
+
+.hero h1 {
+  margin-top: 0;
+  margin-bottom: 40px;
+  margin-left: 70px;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 44px;
+  line-height: 60px;
+  text-transform: uppercase;
+}
+  
+.hero img {
+  display: block;
+}
