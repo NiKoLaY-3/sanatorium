@@ -280,3 +280,103 @@ body {
 .hero img {
   display: block;
 }
+
+/* blog */
+
+.blog-article {
+  display: flex;
+  justify-content: space-between;
+  width: 1030px;
+  margin: 0 auto;
+}
+
+.blog-article-content {
+  width: 400px;
+}
+
+.blog-article-img {
+  width: 600px;
+}
+
+.blog-article-1 {
+  margin-bottom: 100px;
+}
+
+.blog-article-1 .blog-article-content {
+  margin-right: 30px;
+}
+
+.blog-article-2 {
+  flex-direction: row-reverse;
+  margin-bottom: 120px;
+}
+
+.blog-article-2 .blog-article-content {
+  text-align: right;
+}
+
+.blog-article-2 .blog-article-img {
+  margin-right: 30px;
+}
+
+.blog-article h2 {
+  margin-top: 0;
+  margin-bottom: 35px;
+  font-size: 24px;
+  line-height: 34px;
+  text-decoration: underline;
+  text-decoration-color: #00c6bd;
+  text-decoration-thickness: 2px;
+  text-underline-offset: 15px;
+  text-underline-position: under;
+}
+
+.blog-article-date {
+  margin-top: 0;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 18px;
+  text-transform: uppercase;
+}
+
+.blog-article-description {
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.more {
+  padding: 0;
+  font-family: inherit;
+  font-size: 16px;
+  line-height: 24px;
+  color: inherit;
+  text-decoration-line: underline;
+  background-color: transparent;
+  border: none;
+
+  /* Элемент скрыт в развернутой статье */
+  display: none;
+}
+  
+.more:hover {
+  text-decoration: none;
+  opacity: 0.5;
+}
+
+.more:active {
+  text-decoration: none;
+  opacity: 0.3;
+}
+
+/* Сокращенное отображение статьи */
+
+.blog-article.short .blog-article-description {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+  
+.blog-article.short .more {
+  /* Показываем элемент в свернутой статье */
+  display: inline-block;
+}
