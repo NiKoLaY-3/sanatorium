@@ -975,6 +975,84 @@ body {
   margin: 0;
 }
 
-  
+/* Выделение активной кнопки */
+
+.active {
+  background-color: #00c6bd;
+  color: #fdfdff;
+}
+
+/* Theme: serif font */
+
+.page.serif {
+  font-family: "Philosopher", serif;
+}
+
+/* Theme: dark */
+
+.page.dark {
+  color: #fdfdff;
+  background-color: #1d1f1f;
+}
+
+.page.dark .font-button-sans-serif {
+  color: #fdfdff;
+}
+
+.page.dark .font-button-serif {
+  color: #fdfdff;
+}
+
+.page.dark .theme-button-light {
+  background-image: url("../img/sun-light.svg");
+}
+
+.page.dark .logo img {
+  filter: brightness(20);
+}
+
+.page.dark a {
+  color: #fdfdff;
+}
+
+.page.dark a:hover {
+  opacity: 0.5;
+}
+
+.page.dark a:active {
+  opacity: 0.3;
+}
+
+.page.dark .signin img {
+  filter: brightness(20);
+}
+
+.page.dark .card-view-button-grid {
+  background-image: url("../img/grid-light.svg");
+}
+
+.page.dark .card-view-button-list {
+  background-image: url("../img/list-light.svg");
+}
+
+.page.dark .card {
+  box-shadow: 0 4px 30px #181a1a;
+}
+
+.page.dark .meta time {
+  color: rgba(253, 253, 255, 0.5);
+}
+
+.page.dark .share {
+  filter: brightness(20);
+}
+
+.page.dark .social-item img {
+  filter: brightness(20);
+}
+
+.page.dark .post-share {
+  filter: brightness(20);
+}
 
 
