@@ -1055,4 +1055,33 @@ body {
   filter: brightness(20);
 }
 
+/*Стили для заглушки*/
+.develop {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+}
+
+.input-btn {
+  width: 201px;
+  height: 51px;
+  text-transform: uppercase;
+  background-color: #74020c;
+  font-size: 15px;
+  border: none;
+  color: #f8f6f6;
+}
+
+.input-btn:hover {
+  background-color: #880004;
+  cursor: pointer;
+}
+
+a.input-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
