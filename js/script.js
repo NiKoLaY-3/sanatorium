@@ -2,6 +2,7 @@ let lightThemeBtn = document.querySelector('.theme-button-light');
 let darkThemeBtn = document.querySelector('.theme-button-dark');
 let sansSerifFontBtn = document.querySelector('.font-button-sans-serif');
 let serifFontBtn = document.querySelector('.font-button-serif');
+const burgerBtn = document.getElementById('burger');
 
 lightThemeBtn.onclick = function() {
   document.body.classList.remove('dark');
@@ -64,11 +65,16 @@ let previews = document.querySelectorAll('.preview-list a');
 
 for (let currentPhoto of previews) {
   currentPhoto.onclick = function (evt) {
-  evt.preventDefault();
-  activePhoto.src = currentPhoto.href;
+    evt.preventDefault();
+    activePhoto.src = currentPhoto.href;
 
-  let currentActive = document.querySelector('.active-item');
-  currentActive.classList.remove('active-item');
-  currentPhoto.classList.add('active-item');
-};
+    let currentActive = document.querySelector('.active-item');
+    currentActive.classList.remove('active-item');
+    currentPhoto.classList.add('active-item');
+  };
 }
+
+/////////////////////////////////////
+burgerBtn.addEventListener('click', function () {
+  document.querySelector('.main-nav').classList.toggle('open');
+});
